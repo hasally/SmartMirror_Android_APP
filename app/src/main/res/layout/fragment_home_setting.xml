@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Home_SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/asapcondensed_medium"
+            android:text="옵션 설정"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/weather_loc_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="6dp"
+            app:cardCornerRadius="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/weather_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/ic_weather" />
+
+                <TextView
+                    android:id="@+id/weather_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/asapcondensed_medium"
+                    android:text="날씨 설정"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/weather_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/weather_loc_togglebtn"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tbAsDefaultOn="true"
+                    app:tbOffColor="@color/indicator_unselected"
+                    app:tbOnColor="#8cb8df" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/memo_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/memo_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/ic_memo" />
+
+                <TextView
+                    android:id="@+id/memo_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/asapcondensed_medium"
+                    android:text="메모 설정"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/memo_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/memo_home_togglebtn"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tbAsDefaultOn="true"
+                    app:tbOffColor="@color/indicator_unselected"
+                    app:tbOnColor="#8cb8df" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/alarm_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/alarm_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/ic_alarm" />
+
+                <TextView
+                    android:id="@+id/alarm_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/asapcondensed_medium"
+                    android:text="알람 설정"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/alarm_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/alarm_home_togglebtn"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tbAsDefaultOn="true"
+                    app:tbOffColor="@color/indicator_unselected"
+                    app:tbOnColor="#8cb8df" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/subway_loc_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/subway_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/ic_subway" />
+
+                <TextView
+                    android:id="@+id/subway_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/asapcondensed_medium"
+                    android:text="지하철 설정"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/subway_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/subway_loc_togglebtn"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tbAsDefaultOn="true"
+                    app:tbOffColor="@color/indicator_unselected"
+                    app:tbOnColor="#8cb8df" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/news_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/news_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/ic_news" />
+
+                <TextView
+                    android:id="@+id/news_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/asapcondensed_medium"
+                    android:text="뉴스 설정"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/news_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/news_home_togglebtn"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tbAsDefaultOn="true"
+                    app:tbOffColor="@color/indicator_unselected"
+                    app:tbOnColor="#8cb8df" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/recommend_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="5dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/recommend_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/ic_recommend" />
+
+                <TextView
+                    android:id="@+id/recommend_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/asapcondensed_medium"
+                    android:text="맞춤형 추천 설정"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/recommend_icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/recommend_home_togglebtn"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tbAsDefaultOn="true"
+                    app:tbOffColor="@color/indicator_unselected"
+                    app:tbOnColor="#8cb8df" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</FrameLayout>

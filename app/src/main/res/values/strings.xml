@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">MIRRORE:</string>
+    <string name="ip">http://172.18.81.57:8081/enocre/</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add">Add</string>
+    <string name="menu">Menu</string>
+    <string name="save">Save</string>
+    <string name="please_enter_title">제목을 입력해주세요</string>
+    <string name="please_enter_content">내용을 입력해주세요</string>
+    <string name="finish">finish</string>
+    <string name="save_memo">저장</string>
+
+    <!--SeppchToTextActivity-->
+    <string name="speech_prompt"></string>
+    <string name="speech_not_supported"></string>
+
+    <!-- 192.168.0.15 172.18.77.195 172.18.71.3 -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Edit Alarm Activity/Fragment -->
+    <string name="time">시간</string>
+    <string name="label">알람 이름</string>
+    <string name="days">요일</string>
+    <string name="edit_alarm">알람 수정</string>
+    <string name="add_alarm">알람 추가</string>
+    <string name="add_label_hint">알람 이름</string>
+    <string name="update_complete">업데이트 성공</string>
+    <string name="update_failed">업데이트 실패</string>
+    <string name="delete_complete">삭제된 알람</string>
+    <string name="delete_failed">삭제 실패</string>
+    <string name="delete_dialog_title">알람</string>
+    <string name="delete_dialog_content">이 알람을 삭제하시겠습니까?</string>
+    <string name="yes">삭제</string>
+    <string name="no">취소</string>
+
+    <!-- Edit Alarm Menu -->
+    <string name="action_save">저장</string>
+    <string name="action_delete">삭제</string>
+
+    <!-- Alarm Landing Page Activity/Fragment -->
+    <string name="launch_main_activity">알람 설정</string>
+    <string name="dismiss">알람 끄기 미션 시작</string>
+
+    <!-- Days -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- Alarm Channel -->
+    <string name="channel_name">Channel Name</string>
+
+    <!-- Chat UI -->
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Motion -->
+    <string name="hello">미러 앞으로 가서 알맞은 모션을 취해주세요</string>
+
+</resources>

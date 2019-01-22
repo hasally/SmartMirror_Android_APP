@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Home_SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/light_btn"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/ic_lamp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="미러 조명" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/mirror_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/ic_fan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="온풍기" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/label"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Type here:" />-->
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:background="#F4F4F4"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/send_message_layout"
+                    android:clipToPadding="false"
+                    android:divider="@null"
+                    android:paddingTop="8dp" />
+
+                <LinearLayout
+                    android:id="@+id/send_message_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffdddddd"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/btnSpeak"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_voice"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/recv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:height="25dp"-->
+        <!--android:text="" />-->
+
+    </LinearLayout>
+</FrameLayout>

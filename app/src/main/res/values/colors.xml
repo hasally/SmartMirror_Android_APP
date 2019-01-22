@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBaseText">#000000</color>
+    <color name="colorPoint">#589ad7</color>
+    <color name="colorError">#D53B49</color>
+
+    <color name="navigationBarColorAttempted">#777</color>
+    <color name="navigationBarColorSkipped">#063E8B</color>
+    <color name="violet">#673AB7</color>
+    <color name="sky_blue">#0F96FE</color>
+    <color name="sky_blue_pressed">#245E61</color>
+    <color name="black">#000000</color>
+    <color name="lightGreen">#76AB42</color>
+    <color name="white">#FFFFFF</color>
+    <color name="toggle">#8cb8df</color>
+    <color name="singup">#4f9ce2</color>
+    <color name="gray">#b1b1b1</color>
+
+    <color name="indicator_unselected">#dadbda</color>
+    <!--4D000000-->
+    <color name="indicator_selected">#FB130B</color>
+
+    <color name="primary">#00BCD4</color>
+    <color name="primary_dark">#0097A7</color>
+    <color name="primary_light">#B2EBF2</color>
+    <color name="accent">#8CB8DF</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+</resources>

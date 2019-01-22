@@ -1,0 +1,15 @@
+int attr tbAnimate 0x7f040001
+int attr tbAsDefaultOn 0x7f040002
+int attr tbBorderWidth 0x7f040003
+int attr tbOffBorderColor 0x7f040004
+int attr tbOffColor 0x7f040005
+int attr tbOnColor 0x7f040006
+int attr tbSpotColor 0x7f040007
+int[] styleable ToggleButton { 0x7f040001, 0x7f040002, 0x7f040003, 0x7f040004, 0x7f040005, 0x7f040006, 0x7f040007 }
+int styleable ToggleButton_tbAnimate 0
+int styleable ToggleButton_tbAsDefaultOn 1
+int styleable ToggleButton_tbBorderWidth 2
+int styleable ToggleButton_tbOffBorderColor 3
+int styleable ToggleButton_tbOffColor 4
+int styleable ToggleButton_tbOnColor 5
+int styleable ToggleButton_tbSpotColor 6
