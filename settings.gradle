@@ -1,0 +1,1 @@
+include ':app', ':togglebutton-library', ':AndroidBootstrap', ':progressnevigationbar-library', ':chat-message-view', ':newhandwaveapp', ':openCVLibrary310'
